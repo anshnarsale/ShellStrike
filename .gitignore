@@ -1,0 +1,17 @@
+# Reports and scan output (generated, not source code)
+reports/*.txt
+reports/*.log
+
+# Screenshots (add manually when ready to showcase)
+screenshots/*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+*.swp
+*~
+
+# Temp files
+*.tmp
