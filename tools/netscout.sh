@@ -9,6 +9,13 @@ source "$SCRIPT_DIR/../lib/validate.sh"
 source "$SCRIPT_DIR/../lib/logging.sh"
 source "$SCRIPT_DIR/../lib/traps.sh"
 
+if [[ "$1" == "--help" ]]; then
+    echo "NetScout - Network Discovery Tool"
+    echo "Usage: ./tools/netscout.sh"
+    echo "Detects local network interface, IP, gateway, and discovers hosts on your local network."
+    exit 0
+fi
+
 msg_header "NetScout - Network Discovery"
 
 # Detect default network interface

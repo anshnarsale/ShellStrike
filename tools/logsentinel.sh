@@ -8,6 +8,13 @@ source "$SCRIPT_DIR/../lib/validate.sh"
 source "$SCRIPT_DIR/../lib/logging.sh"
 source "$SCRIPT_DIR/../lib/traps.sh"
 
+if [[ "$1" == "--help" ]]; then
+    echo "LogSentinel - Auth Log Analyzer"
+    echo "Usage: ./tools/logsentinel.sh"
+    echo "Analyzes authentication logs for failed login attempts and suspicious patterns."
+    exit 0
+fi
+
 msg_header "LogSentinel - Log Analyzer"
 
 # Try common Linux auth log locations

@@ -8,6 +8,26 @@ source "$SCRIPT_DIR/lib/validate.sh"
 source "$SCRIPT_DIR/lib/logging.sh"
 source "$SCRIPT_DIR/lib/traps.sh"
 
+VERSION="1.0.0"
+
+if [[ "$1" == "--version" ]]; then
+    echo "ShellStrike v$VERSION"
+    exit 0
+fi
+
+if [[ "$1" == "--help" ]]; then
+    echo "ShellStrike - Kali Linux Security Toolkit"
+    echo ""
+    echo "Usage: ./shellstrike.sh [OPTION]"
+    echo ""
+    echo "Options:"
+    echo "  --help       Show this help message"
+    echo "  --version    Show version information"
+    echo ""
+    echo "Run without options to launch the interactive menu."
+    exit 0
+fi
+
 show_banner() {
     clear
     echo -e "${CYAN}${BOLD}"

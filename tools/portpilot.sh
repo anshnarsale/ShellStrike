@@ -8,6 +8,13 @@ source "$SCRIPT_DIR/../lib/validate.sh"
 source "$SCRIPT_DIR/../lib/logging.sh"
 source "$SCRIPT_DIR/../lib/traps.sh"
 
+if [[ "$1" == "--help" ]]; then
+    echo "PortPilot - Nmap Port Scanner"
+    echo "Usage: ./tools/portpilot.sh <authorized-target-ip>"
+    echo "Runs a basic Nmap scan on the top 100 ports with service detection."
+    exit 0
+fi
+
 msg_header "PortPilot - Port Scanner"
 
 # Check target argument provided

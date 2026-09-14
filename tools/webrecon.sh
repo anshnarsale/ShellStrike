@@ -8,6 +8,13 @@ source "$SCRIPT_DIR/../lib/validate.sh"
 source "$SCRIPT_DIR/../lib/logging.sh"
 source "$SCRIPT_DIR/../lib/traps.sh"
 
+if [[ "$1" == "--help" ]]; then
+    echo "WebRecon - Web Reconnaissance Tool"
+    echo "Usage: ./tools/webrecon.sh <authorized-domain-or-url>"
+    echo "Performs passive checks: DNS, HTTP headers, robots.txt, TLS certificate info."
+    exit 0
+fi
+
 msg_header "WebRecon - Web Reconnaissance"
 
 if [[ -z "$1" ]]; then

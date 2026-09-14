@@ -8,6 +8,13 @@ source "$SCRIPT_DIR/../lib/validate.sh"
 source "$SCRIPT_DIR/../lib/logging.sh"
 source "$SCRIPT_DIR/../lib/traps.sh"
 
+if [[ "$1" == "--help" ]]; then
+    echo "LinuxAudit - Linux Security Audit Tool"
+    echo "Usage: ./tools/linuxaudit.sh"
+    echo "Runs a heuristic security audit: OS info, users, SSH config, firewall, permissions, and more."
+    exit 0
+fi
+
 msg_header "LinuxAudit - Security Audit"
 
 PASS_COUNT=0
