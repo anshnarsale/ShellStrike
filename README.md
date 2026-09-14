@@ -31,7 +31,7 @@ This project was built step-by-step as a hands-on way to learn Bash scripting, L
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ShellStrike.git
+git clone https://github.com/anshnarsale/ShellStrike.git
 cd ShellStrike
 chmod +x shellstrike.sh tools/*.sh
 ```
