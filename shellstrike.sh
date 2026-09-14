@@ -28,16 +28,19 @@ if [[ "$1" == "--help" ]]; then
     exit 0
 fi
 
+
 show_banner() {
     clear
-    echo -e "${CYAN}${BOLD}"
-    echo "╔════════════════════════════════════╗"
-    echo "║          SHELLSTRIKE               ║"
-    echo "║     Kali Linux Security Toolkit    ║"
-    echo "╚════════════════════════════════════╝"
+    echo -e "${GREEN}${BOLD}"
+    if command -v figlet &> /dev/null; then
+        figlet -f slant "ShellStrike"
+    else
+        echo "SHELLSTRIKE"
+    fi
     echo -e "${RESET}"
+    echo -e "${GREEN}    [ Kali Linux Security Toolkit v1.0.0 ]${RESET}"
+    echo -e "${CYAN}    ---------------------------------------${RESET}"
 }
-
 show_banner
 
 show_menu() {
