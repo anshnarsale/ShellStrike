@@ -1,7 +1,8 @@
 #!/bin/bash
 # logging.sh - Simple logging function
 
-LOG_FILE="${LOG_FILE:-$HOME/KaliKit/reports/kalikit.log}"
+# Use SCRIPT_DIR from the calling script (set before sourcing this file)
+LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/../reports/shellstrike.log}"
 
 log_event() {
     local timestamp
