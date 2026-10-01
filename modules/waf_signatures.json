@@ -1,0 +1,3 @@
+{
+  "signatures": ["cloudflare", "aws_waf", "akamai", "imperva", "sucuri"]
+}
