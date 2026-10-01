@@ -1,0 +1,5 @@
+{
+  "module": "port_scanner",
+  "default_threads": 50,
+  "timeout_ms": 1200
+}
