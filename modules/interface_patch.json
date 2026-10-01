@@ -1,0 +1,4 @@
+{
+  "auto_detect_gateway": true,
+  "fallback_interface": "eth0"
+}
