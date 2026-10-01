@@ -1,0 +1,4 @@
+{
+  "sources": ["crt.sh", "certspotter", "dns_brute"],
+  "concurrency": 20
+}
